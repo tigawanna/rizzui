@@ -4,7 +4,6 @@ import { XIcon } from '../../icons/x-mark';
 import { AlertIcon } from './icons';
 import { cn } from '../../lib/cn';
 
-// @ts-ignore - TypeScript overload resolution with slots
 const alert = createVariant({
   slots: {
     root: 'relative block w-full break-all dark:backdrop-blur rounded-(--border-radius) border-(length:--border-width) bg-transparent',

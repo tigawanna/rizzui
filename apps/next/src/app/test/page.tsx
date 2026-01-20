@@ -9,6 +9,7 @@ import { Modal } from 'rizzui/modal';
 import { useState } from 'react';
 import { Drawer } from 'rizzui/drawer';
 import { Dropdown } from 'rizzui/dropdown';
+import { FileInput } from 'rizzui/file-input';
 
 
 export default function TestPage() {
@@ -80,6 +81,8 @@ export default function TestPage() {
             <Dropdown.Item>Item 3</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
+
+        <FileInput label="File Input" />
       </div>
     </div>
   );

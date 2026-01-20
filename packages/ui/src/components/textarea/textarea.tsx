@@ -19,10 +19,10 @@ const textarea = createVariant({
       lg: 'px-4 py-2 text-base',
     },
     disabled: {
-      true: '!bg-muted/70 backdrop-blur cursor-not-allowed !border-muted placeholder:text-muted-foreground text-muted-foreground',
+      true: 'bg-muted/70! backdrop-blur cursor-not-allowed border-muted! placeholder:text-muted-foreground text-muted-foreground',
     },
     error: {
-      true: '!border-red hover:!border-red focus:!border-red !ring-red',
+      true: 'border-red! hover:border-red! focus:border-red! ring-red!',
     },
     clearable: {
       true: '[&:placeholder-shown~.input-clear-btn]:opacity-0 [&:placeholder-shown~.input-clear-btn]:invisible [&:not(:placeholder-shown)~.input-clear-btn]:opacity-100 [&:not(:placeholder-shown)~.input-clear-btn]:visible',

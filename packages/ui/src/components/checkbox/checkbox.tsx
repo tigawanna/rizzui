@@ -12,8 +12,8 @@ const checkbox = createVariant({
   variants: {
     variant: {
       outline:
-        'bg-transparent border-border focus:ring-border checked:!bg-primary checked:!border-primary hover:enabled:border-primary',
-      flat: 'border-0 bg-muted/70 backdrop-blur hover:enabled:bg-muted focus:ring-border checked:!bg-primary',
+        'bg-transparent border-border focus:ring-border checked:bg-primary! checked:border-primary! hover:enabled:border-primary',
+      flat: 'border-0 bg-muted/70 backdrop-blur hover:enabled:bg-muted focus:ring-border checked:bg-primary!',
     },
     size: {
       sm: 'h-5 w-5',

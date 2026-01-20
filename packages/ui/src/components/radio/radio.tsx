@@ -11,7 +11,7 @@ const radio = createVariant({
   variants: {
     variant: {
       outline:
-        'bg-transparent border-border checked:!bg-primary dark:checked:!bg-transparent checked:!border-primary hover:enabled:border-primary',
+        'bg-transparent border-border checked:bg-primary! dark:checked:bg-transparent! checked:border-primary! hover:enabled:border-primary',
     },
     size: {
       sm: 'h-5 w-5',

@@ -174,9 +174,7 @@ type Slots = Record<string, string>;
  * }
  */
 type SlotsVariants<TVariants extends Variants = Variants> = {
-  [K in keyof TVariants]: {
-    [SlotKey in string]?: string;
-  };
+  [K in keyof TVariants]: Record<string | number, Record<string, string>>;
 };
 
 /**
@@ -200,7 +198,7 @@ type SlotsVariants<TVariants extends Variants = Variants> = {
 type SlotsCompoundVariant<TVariants extends Variants = Variants> = {
   [K in keyof TVariants]?: keyof TVariants[K] | boolean;
 } & {
-  class?: string | Record<string, string>;
+  class?: string | Record<string, string> | any;
 };
 
 /**
@@ -217,7 +215,7 @@ type SlotsConfig<TSlots extends Slots = Slots, TVariants extends Variants = Vari
   /** Slot-specific variant definitions */
   variants?: SlotsVariants<TVariants>;
   /** Compound variants for slots */
-  compoundVariants?: Array<SlotsCompoundVariant<TVariants>>;
+  compoundVariants?: Array<SlotsCompoundVariant<TVariants> | any>;
   /** Default values for variants */
   defaultVariants?: DefaultVariants<TVariants>;
   /** Explicitly exclude base to distinguish from VariantConfig */
@@ -718,4 +716,3 @@ function createVariant(config: any): any {
 
 export { createVariant };
 export type { VariantPropsInternal as VariantProps };
-

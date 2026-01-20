@@ -149,14 +149,14 @@ const uploadZone = (createVariant as any)({
     disabled: {
       true: {
         uploadZoneArea:
-          '!bg-muted/70 backdrop-blur cursor-not-allowed !border-muted opacity-60',
+          'bg-muted/70! backdrop-blur cursor-not-allowed border-muted! opacity-60',
         input: 'cursor-not-allowed',
       },
     },
     error: {
       true: {
         uploadZoneArea:
-          '!border-red hover:!border-red focus-visible:!border-red focus-visible:outline-none',
+          'border-red! hover:border-red! focus-visible:border-red! focus-visible:outline-none',
       },
     },
   },

@@ -4,34 +4,33 @@ import { createVariant, type VariantProps } from '../../lib/variants';
 import { cn } from '../../lib/cn';
 import { useResizeHandler } from './drawer.lib';
 
-// @ts-ignore - TypeScript overload resolution with slots
 const drawer = createVariant({
   slots: {
-    root: 'fixed inset-0 z-[999] overflow-hidden',
+    root: 'fixed inset-0 z-999 overflow-hidden',
     overlay:
-      'fixed inset-0 cursor-pointer bg-black/60 duration-300 ease-in-out data-[closed]:opacity-0',
+      'fixed inset-0 cursor-pointer bg-black/60 duration-300 ease-in-out data-closed:opacity-0',
     panel: 'fixed w-full h-full bg-background duration-300 ease-out',
     resizer: 'absolute rounded-md bg-gray-400',
   },
   variants: {
     placement: {
       top: {
-        panel: 'top-0 data-[closed]:-translate-y-full',
+        panel: 'top-0 data-closed:-translate-y-full',
         resizer:
           'start-1/2 bottom-1 h-1.5 transition-transform duration-300 w-14 hover:scale-x-125 cursor-n-resize',
       },
       right: {
-        panel: 'inset-y-0 end-0 data-[closed]:translate-x-full',
+        panel: 'inset-y-0 end-0 data-closed:translate-x-full',
         resizer:
           'start-1 top-1/2 h-14 hover:scale-y-125 transition-transform duration-300 w-1.5 -translate-y-1/2 cursor-w-resize',
       },
       bottom: {
-        panel: 'bottom-0 data-[closed]:translate-y-full',
+        panel: 'bottom-0 data-closed:translate-y-full',
         resizer:
           'start-1/2 -translate-x-1/2 top-1 w-14 h-1.5 transition-transform duration-300 hover:scale-x-125 cursor-n-resize',
       },
       left: {
-        panel: 'inset-y-0 start-0 data-[closed]:-translate-x-full',
+        panel: 'inset-y-0 start-0 data-closed:-translate-x-full',
         resizer:
           'end-1 top-1/2 h-14 hover:scale-y-125 transition-transform duration-300 w-1.5 -translate-y-1/2 cursor-w-resize',
       },

@@ -41,7 +41,7 @@ const pinCode = createVariant({
       true: 'disabled:bg-muted/70 disabled:backdrop-blur disabled:placeholder:text-muted-foreground disabled:text-muted-foreground disabled:cursor-not-allowed disabled:border-muted',
     },
     error: {
-      true: 'border-red hover:enabled:!border-red focus:enabled:!border-red !ring-red',
+      true: 'border-red hover:enabled:border-red! focus:enabled:border-red! ring-red!',
     },
   },
   defaultVariants: {

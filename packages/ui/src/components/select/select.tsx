@@ -50,10 +50,10 @@ const select = createVariant({
       lg: 'px-4 py-2 text-base h-12',
     },
     disabled: {
-      true: '!bg-muted/70 backdrop-blur cursor-not-allowed !border-muted text-muted-foreground placeholder:text-muted-foreground !ring-muted',
+      true: 'bg-muted/70! backdrop-blur cursor-not-allowed border-muted! text-muted-foreground placeholder:text-muted-foreground ring-muted!',
     },
     error: {
-      true: '!border-red hover:!border-red focus:!border-red !ring-red',
+      true: 'border-red! hover:border-red! focus:border-red! ring-red!',
     },
     hasPrefix: {
       true: '',
