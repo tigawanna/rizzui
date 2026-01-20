@@ -15,6 +15,26 @@ It is the same system RizzUI uses internally for all variant-driven components.
 import { createVariant } from 'rizzui/variants';
 ```
 
+## IntelliSense
+
+You can enable autocompletion inside `createVariant` using the steps below:
+
+**Visual Studio Code:**
+
+1. Install the ["Tailwind CSS IntelliSense"](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) Visual Studio Code extension
+
+2. Add the following to your `settings.json`:
+
+```json
+{
+  "tailwindCSS.classFunctions": ["cn", "createVariant"]
+}
+```
+
+This will provide full IntelliSense support for Tailwind classes when using `createVariant` and the `cn` utility function, making it easier to write and maintain your variant definitions.
+
+---
+
 ## Core Ideas
 
 - **Base styles** - classes that always apply

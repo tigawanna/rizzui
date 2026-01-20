@@ -8,6 +8,19 @@ import { Button } from 'rizzui/button';
 // Blog post data
 const blogPosts = [
   {
+    title: 'RizzUI 2.1.0',
+    date: 'January 20, 2026',
+    readingTime: '5 min read',
+    description:
+      "We're excited to announce RizzUI 2.1.0, a maintenance release that introduces our custom createVariant system, fixes TypeScript type issues, and resolves minor component bugs. This release replaces the dependency on tailwind-variants with our own production-ready variant system.",
+    features: [
+      'Custom createVariant System',
+      'No More tailwind-variants Dependency',
+      'Fixed Variant Type Definitions',
+    ],
+    link: '/blog/2026/01/20/2026/',
+  },
+  {
     title: 'RizzUI 2.0.0',
     date: 'November 11, 2025',
     readingTime: '7 min read',
