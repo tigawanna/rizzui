@@ -54,7 +54,7 @@
     "tailwindcss": "4.1.11",
     "turndown": "7.2.2",
     "uuid": "11.1.0",
-    "zod": "3.25.67"
+    "zod": "4.3.5"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.9.2",

@@ -33,11 +33,10 @@ const schema = z
     fullName: z
       .string()
       .min(2, { message: 'Full name must be at least 2 characters' }),
-    email: z.string().email({ message: 'Invalid email address' }),
+    email: z.email({ message: 'Invalid email address' }),
     phone: z.string().min(10, { message: 'Phone number is required' }),
     dateOfBirth: z.string().min(1, { message: 'Date of birth is required' }),
     website: z
-      .string()
       .url({ message: 'Invalid URL' })
       .optional()
       .or(z.literal('')),
