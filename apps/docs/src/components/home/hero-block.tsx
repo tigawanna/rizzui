@@ -73,13 +73,13 @@ export default function HeroBlock() {
       <div className="container! relative mx-auto">
         <header className="text-center flex flex-col items-center justify-center">
           <Announcement
-            badgeText="⚡ v2.0.0"
+            badgeText="⚡ v2.1.0"
             className="mb-6! md:mb-7! sm:hidden mx-auto border border-border [box-shadow:0_1px_0_var(--border-color)]"
           >
             — released
           </Announcement>
           <Announcement
-            badgeText="⚡ v2.0.0"
+            badgeText="⚡ v2.1.0"
             highlightedText=" released"
             highlightedTextClassName="ml-1.5"
             className="mb-6! hidden sm:block md:mb-7! mx-auto border border-border [box-shadow:0_1px_0_var(--border-color)]"

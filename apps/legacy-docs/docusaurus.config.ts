@@ -91,7 +91,7 @@ const config: Config = {
     image: 'img/rizz-social-card.jpg',
     announcementBar: {
       content:
-        '🎉 <strong class="text-white">RizzUI v2.0.0 released!</strong> New features, better performance <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://rizzui.com">Upgrade now →</a>',
+        '🎉 <strong class="text-white">RizzUI v2.1.0 released!</strong> New features, better performance <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://rizzui.com">Upgrade now →</a>',
       backgroundColor: '#000000',
     },
     fonts: {
